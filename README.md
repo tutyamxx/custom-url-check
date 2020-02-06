@@ -63,3 +63,5 @@ TestURL.forEach(element =>
 # Result of the example above
 
 ![Result](https://github.com/tutyamxx/check-custom-url/blob/master/example.PNG)
+
+<p align="center">🐜</p>
