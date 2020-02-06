@@ -1,5 +1,8 @@
 # check-custom-url
-* 🐜 Simple NPM package to check if a string is valid and a specific community URL!
+
+<p align="center">🐜</p>
+
+* Simple NPM package to check if a string is valid and a specific community URL!
 * Check if a string is a custom community URL that you want!
 
 # Install via NPM
