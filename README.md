@@ -28,6 +28,7 @@ CheckCustomURL("https://www.github.com", "youtube");
 CheckCustomURL("https://www.youtube.com/", "YouTube");
 CheckCustomURL("www.youtube.com", "youtube");
 CheckCustomURL("youtube.com", "YouTUBE");
+CheckCustomURL("https://www.youtube.com/watch?v=w3jLJU7DT5E", "Youtube");
 ```
 
 # Example
