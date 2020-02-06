@@ -7,7 +7,7 @@
 
 module.exports = (url, options) =>
 {
-    if(url.length <= 0 && !url && typeof url !== "string")
+    if(url.length <= 0 || !url || typeof url !== "string")
     {
         return false;
     }
