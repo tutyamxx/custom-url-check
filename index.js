@@ -12,6 +12,11 @@ module.exports = (url, options) =>
         return false;
     }
 
+    if(options.length <= 0 || !options || typeof options !== "string")
+    {
+        throw "@options parameter cannot be empty!";
+    }
+
     const ProvidedURL = url.trim();
     let RegexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + options.toString() + "\.[-a-zA-Z0-9./]+$", "gi");
     
