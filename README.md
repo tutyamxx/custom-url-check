@@ -2,7 +2,7 @@
 
 <p align="center">🐜</p>
 
-* Simple NPM package to check for a valid custom filtered URL!
+* Simple NPM package to check a string for a valid custom filtered URL!
 * See examples below
 
 # Install via NPM
