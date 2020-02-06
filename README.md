@@ -17,7 +17,7 @@ CheckCustomURL(url, filter); // filter is case-insensitive
 
 // --| The below URL is not a valid YouTube URL
 CheckCustomURL("https://www.google.com", "YouTube");
-CheckCustomURL("https://www.google.com", "YouTuBE");
+CheckCustomURL("https://www.github.com", "YouTuBE");
 
 // --| The below URL is a valid YouTube URL
 CheckCustomURL("https://www.youtube.com/", "YouTube");
