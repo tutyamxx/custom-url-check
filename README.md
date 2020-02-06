@@ -3,7 +3,7 @@
 <p align="center">🐜</p>
 
 * Simple NPM package to check if a string is valid and a specific community URL!
-* Check if a string is a custom community URL that you want!
+* You can check if a string is a custom community URL that you want. See examples below!
 
 # Install via NPM
 

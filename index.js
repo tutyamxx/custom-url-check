@@ -1,6 +1,6 @@
 /**
- *  check-custom-url - Determinate if a string is a custom specific URL
- *  @version v1.0.0
+ *  check-custom-url - Check if a string is a custom community URL that you want!
+ *  @version v1.0.1
  *  @link    
  *  @license MIT
  **/
