@@ -18,12 +18,15 @@
 CheckCustomURL(url, filter);
 
 // --| The below URL is not a valid YouTube URL
+CheckCustomURL("amazon.com", "youtube");
 CheckCustomURL("www.google.com", "YouTube");
 CheckCustomURL("https://www.github.com", "youtube");
 
+
 // --| The below URL is a valid YouTube URL
 CheckCustomURL("https://www.youtube.com/", "YouTube");
-CheckCustomURL("http://www.youtube.com/", "youtube");
+CheckCustomURL("www.youtube.com", "youtube");
+CheckCustomURL("youtube.com", "YouTUBE");
 ```
 
 # Example
