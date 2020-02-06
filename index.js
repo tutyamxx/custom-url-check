@@ -5,20 +5,20 @@
  *  @license MIT
  **/
 
-module.exports = (url, options) =>
+module.exports = (url, filter) =>
 {
     if(url.length <= 0 || !url || typeof url !== "string")
     {
         return false;
     }
 
-    if(options.length <= 0 || !options || typeof options !== "string")
+    if(filter.length <= 0 || !filter || typeof filter !== "string")
     {
-        throw "@options parameter cannot be empty!";
+        throw "@filter parameter cannot be empty!";
     }
 
     const ProvidedURL = url.trim();
-    let RegexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + options.toString() + "\.[-a-zA-Z0-9./]+$", "gi");
+    let RegexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filter.toString() + "\.[-a-zA-Z0-9./]+$", "gi");
     
     if(ProvidedURL.match(RegexCheckCustomURL))
     {
