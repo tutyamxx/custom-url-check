@@ -2,8 +2,8 @@
 
 <p align="center">🐜</p>
 
-* Simple NPM package to check if a string is valid and a specific community URL!
-* You can check if a string is a custom community URL that you want. See examples below!
+* Simple NPM package to check for a valid custom filtered URL!
+* See examples below
 
 # Install via NPM
 
