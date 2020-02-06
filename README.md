@@ -41,7 +41,7 @@ const TestURL =
     "http://www.google.com",
     "www.google.com",
     "google.com"
-]
+];
 
 TestURL.forEach(element =>
 {
