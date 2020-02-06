@@ -11,7 +11,7 @@
 
 # Usage
 
-- Returns a Boolean indicating whether `string` is a valid URL and contains the specified community filter
+- Returns a Boolean indicating whether `string` is a valid URL and contains the specified community `filter`
 - `filter` parameter is case-insensitive
 
 ```javascript
