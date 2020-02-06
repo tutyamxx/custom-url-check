@@ -11,9 +11,11 @@
 
 # Usage
 
-```javascript
-CheckCustomURL(url, filter); // filter is case-insensitive
+- Returns a Boolean indicating whether `string` is a valid URL and contains the specified community filter
+- `filter` parameter is case-insensitive
 
+```javascript
+CheckCustomURL(url, filter);
 
 // --| The below URL is not a valid YouTube URL
 CheckCustomURL("https://www.google.com", "YouTube");
