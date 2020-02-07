@@ -1,4 +1,4 @@
-# check-custom-url
+# custom-url-check
 
 <p align="center">🐜</p>
 
@@ -7,7 +7,7 @@
 
 # Install via NPM
 
-`$ npm i check-custom-url `
+`$ npm i custom-url-check `
 
 # Usage
 
@@ -15,7 +15,7 @@
 - `filter` parameter is case-insensitive
 
 ```javascript
-const CheckCustomURL = require("check-custom-url");
+const CheckCustomURL = require("custom-url-check");
 
 // --| CheckCustomURL(url, filter);
 // --| The below URL is not a valid YouTube URL
@@ -34,7 +34,7 @@ CheckCustomURL("https://www.youtube.com/watch?v=w3jLJU7DT5E", "Youtube");
 # Example
 
 ```javascript
-const CheckCustomURL = require("check-custom-url");
+const CheckCustomURL = require("custom-url-check");
 
 const TestURL = 
 [
