@@ -18,7 +18,7 @@ module.exports = (url, filter) =>
     }
 
     const ProvidedURL = url.trim();
-    let RegexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filter.toString() + "\.[-a-zA-Z0-9./]+$", "gi");
+    let RegexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filter.toString() + "\.[-?+=:;a-zA-Z0-9./]+$", "gi");
     
     if(ProvidedURL.match(RegexCheckCustomURL))
     {
