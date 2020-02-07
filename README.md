@@ -5,7 +5,7 @@
 * Simple NPM package to check a string for a valid custom filtered URL!
 * See examples below
 
-# Install via NPM
+# Install via [NPM](https://www.npmjs.com/package/custom-url-check)
 
 `$ npm i custom-url-check `
 
