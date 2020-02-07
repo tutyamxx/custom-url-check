@@ -1,23 +1,24 @@
 {
-  "name": "check-custom-url",
-  "version": "1.0.3",
+  "name": "custom-url-check",
+  "version": "1.0.1",
   "description": "🐜 Simple NPM package to check if a string is valid and a specific community URL!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "check-custom-url",
+    "custom-url-check",
     "node",
     "npm",
     "valid-url",
-    "url"
+    "url-check",
+    "custom-url"
   ],
   "author": "tuty",
   "repository": {
       "type": "git",
-      "url": "https://github.com/tutyamxx/check-custom-url"
+      "url": "https://github.com/tutyamxx/custom-url-check"
   },
-  "homepage": "https://github.com/tutyamxx/check-custom-url",
+  "homepage": "https://github.com/tutyamxx/custom-url-check",
   "license": "MIT"
 }
