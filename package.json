@@ -1,6 +1,6 @@
 {
   "name": "check-custom-url",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "🐜 Simple NPM package to check if a string is valid and a specific community URL!",
   "main": "index.js",
   "scripts": {
