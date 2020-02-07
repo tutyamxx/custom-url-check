@@ -1,6 +1,6 @@
 /**
  *  check-custom-url - Simple NPM package to check a string for a valid custom filtered URL!
- *  @version: v1.0.1
+ *  @version: v1.1.0
  *  @link: https://github.com/tutyamxx/check-custom-url
  *  @license: MIT
  **/
