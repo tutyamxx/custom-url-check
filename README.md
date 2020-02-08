@@ -19,8 +19,8 @@ const CheckCustomURL = require("custom-url-check");
 
 // --| CheckCustomURL(url, filter);
 // --| The below URL is not a valid YouTube URL
-CheckCustomURL("amazon.com", "youtube");
-CheckCustomURL("www.google.com", "YouTube");
+CheckCustomURL("amazon.co.uk", "youtube");
+CheckCustomURL("www.google.pl", "YouTube");
 CheckCustomURL("https://www.github.com", "youtube");
 
 // --| CheckCustomURL(url, filter);
@@ -40,7 +40,7 @@ const TestURL =
 [
     "https://www.npmjs.com/",
     "www.googl.co.uk",
-    "www.youtube.com",
+    "www.youtube.ro",
     "http://google.com",
     "https://www.google.com",
     "http://www.google.com",
@@ -64,6 +64,6 @@ TestURL.forEach(element =>
 
 # Result of the example above
 
-![Result](https://github.com/tutyamxx/check-custom-url/blob/master/example.PNG)
+![Result](https://i.imgur.com/0xi85A5.png)
 
 <p align="center">🐜</p>
