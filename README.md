@@ -64,6 +64,8 @@ TestURL.forEach(element =>
 
 # Result of the example above
 
-![Result](https://i.imgur.com/0xi85A5.png)
+<p align="center">
+  <img src="https://i.imgur.com/2B0b4nQ.png"><br/>
+</p>
 
 <p align="center">🐜</p>
