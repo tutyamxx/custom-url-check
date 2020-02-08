@@ -1,11 +1,11 @@
 /**
  *  check-custom-url - Simple NPM package to check a string for a valid custom filtered URL!
- *  @version: v1.1.3
+ *  @version: v1.1.4
  *  @link: https://github.com/tutyamxx/custom-url-check
  *  @license: MIT
  **/
 
-module.exports = (url, filter) =>
+const CheckCustomURL = module.exports = (url, filter) =>
 {
     if(url.length <= 0 || !url || typeof url !== "string")
     {
@@ -18,7 +18,7 @@ module.exports = (url, filter) =>
     }
 
     const ProvidedURL = url.trim();
-    let RegexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filter.toString() + "\.[-=;:?!#@$&_~'+,a-zA-Z0-9./]+$", "gi");
+    const RegexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filter.toString() + "\.[-=;:?!#@$&_~'+,a-zA-Z0-9./]+$", "gi");
     
     if(ProvidedURL.match(RegexCheckCustomURL))
     {
