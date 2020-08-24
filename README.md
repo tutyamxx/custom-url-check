@@ -2,6 +2,8 @@
 
 <p align="center">🐜</p>
 
+<p align="center"><a href="https://nodei.co/npm/custom-url-check/"><img src="https://nodei.co/npm/custom-url-check.png"></a></p>
+
 * Simple NPM package to check a string for a valid custom filtered URL!
 * See examples below
 
