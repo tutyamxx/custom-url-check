@@ -1,10 +1,10 @@
 {
   "name": "custom-url-check",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "🐜 Simple NPM package to check if a string is valid and a specific community URL!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
   },
   "keywords": [
     "custom-url-check",
@@ -22,5 +22,8 @@
     "url": "https://github.com/tutyamxx/custom-url-check"
   },
   "homepage": "https://github.com/tutyamxx/custom-url-check",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
 }
