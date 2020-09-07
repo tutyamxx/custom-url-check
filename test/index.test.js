@@ -55,3 +55,8 @@ test("Check for invalid custom YouTube links case insensitive", () =>
         expect(customURL(url, "YOUTUBE")).toBe(false);
     });
 });
+
+test("Should throw an error if filter param is empty", () =>
+{
+    expect(() => { customURL("https://www.youtube.com/", "") }).toThrowError("@filter parameter cannot be empty!");
+});
