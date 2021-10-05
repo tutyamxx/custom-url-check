@@ -6,11 +6,11 @@
  **/
 
 module.exports = (url, filterParam) => {
-    if (url?.length <= 0 || !url || typeof url !== "string") return false;
-    if (filterParam?.length <= 0 || !filterParam || typeof filterParam !== "string") throw "@filter parameter cannot be empty!";
+    if (url.length <= 0 || !url || typeof url !== "string") return false;
+    if (filterParam.length <= 0 || !filterParam || typeof filterParam !== "string") throw "@filter parameter cannot be empty!";
 
     const providedURL = url.trim();
-    const regexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filterParam?.toString() + "\.[-=;:?!#@$&_~'+,a-zA-Z0-9./]+$", "gi");
+    const regexCheckCustomURL = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filterParam.toString() + "\.[-=;:?!#@$&_~'+,a-zA-Z0-9./]+$", "gi");
 
     return providedURL.match(regexCheckCustomURL) ? true : false;
 };
