@@ -17,29 +17,28 @@
 - `filter` parameter is case-insensitive
 
 ```javascript
-const customURL = require("custom-url-check");
+const customUrl = require("custom-url-check");
 
 // --| customURL(url, filter);
 // --| The below URL is not a valid YouTube URL
-customURL("amazon.co.uk", "youtube");
-customURL("www.google.pl", "YouTube");
-customURL("https://www.github.com", "youtube");
+customUrl("amazon.co.uk", "youtube");
+customUrl("www.google.pl", "YouTube");
+customUrl("https://www.github.com", "youtube");
 
 // --| customURL(url, filter);
 // --| The below URL is a valid YouTube URL
-customURL("https://www.youtube.com/", "YouTube");
-customURL("www.youtube.com", "youtube");
-customURL("youtube.com", "YouTUBE");
-customURL("https://www.youtube.com/watch?v=w3jLJU7DT5E", "Youtube");
+customUrl("https://www.youtube.com/", "YouTube");
+customUrl("www.youtube.com", "youtube");
+customUrl("youtube.com", "YouTUBE");
+customUrl("https://www.youtube.com/watch?v=w3jLJU7DT5E", "Youtube");
 ```
 
 # Example
 
 ```javascript
-const customURL = require("custom-url-check");
+const customUrl = require("custom-url-check");
 
-const TestURL =
-[
+const testUrl = [
     "https://www.npmjs.com/",
     "www.googl.co.uk",
     "www.youtube.ro",
@@ -50,15 +49,12 @@ const TestURL =
     "google.com"
 ];
 
-TestURL.forEach(element =>
-{
-    if(customURL(element, "GoOgLe"))
-    {
+testUrl.forEach((element) => {
+    if (customUrl(element, "GoOgLe")) {
         console.log(element + " It's a valid Google URL! ✅");
     }
 
-    else
-    {
+    else {
         console.log(element + " Is not a valid Google URL! ❌");
     }
 });
