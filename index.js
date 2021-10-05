@@ -13,7 +13,7 @@ module.exports = (url, filterParam) => {
     else if (typeof filterParam !== "string") throw "@filter parameter must be a string!";
 
     const providedURL = url.trim();
-    const regexCheckCustomUrl = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filterParam?.toString() + "\.[-=;:?!#@$&_~'+,a-zA-Z0-9./]+$", "gi");
+    const regexCheckCustomUrl = new RegExp("^(?:https?:\/\/)?(?:www\.)?" + filterParam.toString() + "\.[-=;:?!#@$&_~'+,a-zA-Z0-9./]+$", "gi");
 
     return providedURL.match(regexCheckCustomUrl) ? true : false;
 };
