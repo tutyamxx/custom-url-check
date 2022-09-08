@@ -17,45 +17,45 @@
 - `filter` parameter is case-insensitive
 
 ```javascript
-const customUrl = require("custom-url-check");
+const customUrl = require('custom-url-check');
 
 // --| customURL(url, filter);
 // --| The below URL is not a valid YouTube URL
-customUrl("amazon.co.uk", "youtube");
-customUrl("www.google.pl", "YouTube");
-customUrl("https://www.github.com", "youtube");
+customUrl('amazon.co.uk', 'youtube');
+customUrl('www.google.pl', 'YouTube');
+customUrl('https://www.github.com', 'youtube');
 
 // --| customURL(url, filter);
 // --| The below URL is a valid YouTube URL
-customUrl("https://www.youtube.com/", "YouTube");
-customUrl("www.youtube.com", "youtube");
-customUrl("youtube.com", "YouTUBE");
-customUrl("https://www.youtube.com/watch?v=w3jLJU7DT5E", "Youtube");
+customUrl('https://www.youtube.com/', 'YouTube');
+customUrl('www.youtube.com', 'youtube');
+customUrl('youtube.com', 'YouTUBE');
+customUrl('https://www.youtube.com/watch?v=w3jLJU7DT5E', 'Youtube');
 ```
 
 # Example
 
 ```javascript
-const customUrl = require("custom-url-check");
+const customUrl = require('custom-url-check');
 
 const testUrl = [
-    "https://www.npmjs.com/",
-    "www.googl.co.uk",
-    "www.youtube.ro",
-    "http://google.com",
-    "https://www.google.com",
-    "http://www.google.com",
-    "www.google.com",
-    "google.com"
+    'https://www.npmjs.com/',
+    'www.googl.co.uk',
+    'www.youtube.ro',
+    'http://google.com',
+    'https://www.google.com',
+    'http://www.google.com',
+    'www.google.com',
+    'google.com'
 ];
 
 testUrl.forEach((element) => {
-    if (customUrl(element, "GoOgLe")) {
-        console.log(element + " It's a valid Google URL! ✅");
+    if (customUrl(element, 'GoOgLe')) {
+        console.log(element + ' It\'s a valid Google URL! ✅');
     }
 
     else {
-        console.log(element + " Is not a valid Google URL! ❌");
+        console.log(element + ' Is not a valid Google URL! ❌');
     }
 });
 ```
