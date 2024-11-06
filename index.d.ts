@@ -1,1 +1,1 @@
-export default function (url: string, filterParam: string): boolean;
+export default function (url: string | undefined | null, filterParam: string | undefined | null): boolean;
