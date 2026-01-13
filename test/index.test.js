@@ -47,21 +47,21 @@ test('Check for invalid custom YouTube links case insensitive', () => {
 });
 
 test('Should throw an error if url param is empty or not specified', () => {
-    expect(() => { customUrl('') }).toThrowError('@url parameter cannot be empty!');
-    expect(() => { customUrl() }).toThrowError('@url parameter cannot be empty!');
+    expect(() => { customUrl('') }).toThrow('@url parameter cannot be empty!');
+    expect(() => { customUrl() }).toThrow('@url parameter cannot be empty!');
 });
 
 test('Should throw an error if filter param is empty or not specified', () => {
-    expect(() => { customUrl('https://www.youtube.com/', '') }).toThrowError('@filter parameter cannot be empty!');
-    expect(() => { customUrl('https://www.youtube.com/') }).toThrowError('@filter parameter cannot be empty!');
+    expect(() => { customUrl('https://www.youtube.com/', '') }).toThrow('@filter parameter cannot be empty!');
+    expect(() => { customUrl('https://www.youtube.com/') }).toThrow('@filter parameter cannot be empty!');
 });
 
 test('Should throw an error if url param is not a string', () => {
-    expect(() => { customUrl(1234) }).toThrowError('@url parameter must be a string!');
-    expect(() => { customUrl(-123.54) }).toThrowError('@url parameter must be a string!');
+    expect(() => { customUrl(1234) }).toThrow('@url parameter must be a string!');
+    expect(() => { customUrl(-123.54) }).toThrow('@url parameter must be a string!');
 });
 
 test('Should throw an error if filter param is not a string', () => {
-    expect(() => { customUrl('https://www.youtube.com/', 1234) }).toThrowError('@filter parameter must be a string!');
-    expect(() => { customUrl('https://www.youtube.com/', -123.54) }).toThrowError('@filter parameter must be a string!');
+    expect(() => { customUrl('https://www.youtube.com/', 1234) }).toThrow('@filter parameter must be a string!');
+    expect(() => { customUrl('https://www.youtube.com/', -123.54) }).toThrow('@filter parameter must be a string!');
 });
