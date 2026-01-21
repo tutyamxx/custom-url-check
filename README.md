@@ -5,6 +5,7 @@
 <p align="center"><a href="https://nodei.co/npm/custom-url-check/"><img src="https://nodei.co/npm/custom-url-check.png"></a></p>
 
 * Simple NPM package to check a string for a valid custom filtered URL!
+* ♻️ Works seamlessly with `CommonJS`, `ESM` and `TypeScript`
 * See examples below
 
 # Install via [NPM](https://www.npmjs.com/package/custom-url-check)
@@ -35,6 +36,7 @@ customUrl('https://www.youtube.com/watch?v=w3jLJU7DT5E', 'Youtube');
 
 # Example
 
+## CommonJS
 ```javascript
 const customUrl = require('custom-url-check');
 
@@ -56,6 +58,56 @@ testUrl.forEach((element) => {
 
     else {
         console.log(element + ' Is not a valid Google URL! ❌');
+    }
+});
+```
+
+## ESM
+```javascript
+import customUrl from 'custom-url-check';
+
+const testUrl = [
+    'https://www.npmjs.com/',
+    'www.googl.co.uk',
+    'www.youtube.ro',
+    'http://google.com',
+    'https://www.google.com',
+    'http://www.google.com',
+    'www.google.com',
+    'google.com'
+];
+
+testUrl.forEach((element) => {
+    if (customUrl(element, 'GoOgLe')) {
+        console.log(element + ' It\'s a valid Google URL! ✅');
+    }
+
+    else {
+        console.log(element + ' Is not a valid Google URL! ❌');
+    }
+});
+```
+
+## TypeScript
+```javascript
+import customUrl from 'custom-url-check';
+
+const testUrl: string[] = [
+    'https://www.npmjs.com/',
+    'www.googl.co.uk',
+    'www.youtube.ro',
+    'http://google.com',
+    'https://www.google.com',
+    'http://www.google.com',
+    'www.google.com',
+    'google.com'
+];
+
+testUrl.forEach((element: string) => {
+    if (customUrl(element, 'GoOgLe')) {
+        console.log(`${element} It's a valid Google URL! ✅`);
+    } else {
+        console.log(`${element} Is not a valid Google URL! ❌`);
     }
 });
 ```

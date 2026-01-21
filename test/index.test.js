@@ -5,7 +5,13 @@ const validYoutubeLinks = [
     'https://www.youtube.com/',
     'www.youtube.com',
     'youtube.com',
-    'https://www.youtube.com/watch?v=w3jLJU7DT5E'
+    'https://www.youtube.com/watch?v=w3jLJU7DT5E',
+
+    // --| youtu.be support
+    'https://youtu.be/w3jLJU7DT5E',
+    'http://youtu.be/w3jLJU7DT5E',
+    'youtu.be/w3jLJU7DT5E',
+    'https://youtu.be/w3jLJU7DT5E?t=42'
 ];
 
 const invalidYoutubeLinks = [
@@ -15,7 +21,13 @@ const invalidYoutubeLinks = [
     'https://www.google.com',
     'http://www.google.com',
     'www.google.com',
-    'google.com'
+    'google.com',
+
+    // --| invalid youtu.be variations
+    'https://youtu.be',
+    'https://youtu.be/',
+    'https://youtu.be.fake/w3jLJU7DT5E',
+    'https://notyoutu.be/w3jLJU7DT5E'
 ];
 
 test('Check for valid custom YouTube links', () => {

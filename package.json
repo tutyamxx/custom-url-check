@@ -1,8 +1,15 @@
 {
   "name": "custom-url-check",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "🐜 Simple NPM package to check if a string is valid and a specific community URL!",
   "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+      "require": "./index.js",
+      "import": "./index.js",
+      "types": "./index.d.ts"
+  },
   "scripts": {
     "test": "jest --verbose"
   },
